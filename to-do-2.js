@@ -8,7 +8,7 @@ function reverse(arr){
     }
     return arr;
 }
-console.log(reverse([1,2,3,4]))
+// console.log(reverse([1,2,3,4]))
 
 
 //2.Implement rotateArr(arr, shiftBy) that accepts array and offset. Shift arr’s values to the right by that amount. ‘Wrap-around’ any values that shift off array’s end to the other side, so that no data is lost. Operate in-place: given ([1,2,3],1), change the array to [3,1,2]. Don’t use built-in functions.
@@ -60,7 +60,7 @@ function filterRange(arr, min, max) {
     return arr;
 }
 range=filterRange([3,4,7,2,6,1], 1, 7);
-console.log(range);
+// console.log(range);
 
 //4. Replicate JavaScript’s concat(). Create a standalone function that accepts two arrays. Return a new array containing the first array’s elements, followed by the second array’s elements. Do not alter the original arrays. Ex.: arrConcat( ['a','b'], [1,2] ) should return new array ['a','b',1,2].
 
@@ -77,4 +77,4 @@ function concat(arr1, arr2){
     return newArr;
 }
 combine = concat([1,2,3], [4,5]);
-console.log(combine);
+// console.log(combine);
