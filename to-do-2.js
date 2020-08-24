@@ -26,8 +26,9 @@ function rotate(arr, shiftBy) {
 		if(shiftBy > 0) {
 			var temp = arr[arr.length-1]
 			
-			for(var i = arr.length - 1; i > 0; i--)
+			for(var i = arr.length - 1; i > 0; i--){
 				arr[i] = arr[i-1];
+            }
 			arr[0] = temp;
 
 		} else {
@@ -42,7 +43,7 @@ function rotate(arr, shiftBy) {
     return arr;
 }
 
-x=rotate([1,2,3], 2);
+x=rotate([1,2,3], -4);
 console.log(x);
 
 //3. Alan is good at breaking secret codes. One method is to eliminate values that lie within a specific known range. Given arr and values min and max, retain only the array values between min and max. Work in-place: return the array you are given, with values in original order. No built-in array functions.
@@ -76,5 +77,5 @@ function concat(arr1, arr2){
     }
     return newArr;
 }
-combine = concat([1,2,3], [4,5]);
-// console.log(combine);
+combine = concat([1,2,3], ["a","b"]);
+console.log(combine);
